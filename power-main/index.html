@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>团队-Power</title>
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.4.5/themes/default/easyui.css">
+		<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.4.5/themes/icon.css">
+		<script type="text/javascript" src="js/jquery-easyui-1.4.5/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="js/jquery-easyui-1.4.5/locale/easyui-lang-zh_CN.js"></script>	
+	
+		<script type="text/javascript">
+	$(document).ready(function(){
+			$("#ss").hide();
+			$(".icon-search").click(function(){
+			$("#ss").slideToggle();
+			})
+})
+		</script>
+	</head>
+	
+	<body style="background-color: black;">
+		<div style="margin-left: 100px;margin-top: 30px;">
+			<div id="下拉菜单">
+		<a href="javascript:void(0)" id="mb" class="easyui-menubutton"     
+     	data-options="menu:'#mm',iconCls:'icon-edit'" style="color:red;">卡布其诺</a>   
+		<div id="mm" style="width:150px;">   
+   		<div class="menu-sep"></div>   
+   		<div>团队账户</div>   
+   		<div>应用中心</div>   
+   		<div>邀请成员</div>   
+   		<div>团队统计（PRO）</div> 
+   		<div>升级为Pro版</div> 
+    	<div class="menu-sep"></div>  
+    	<div>切换团队：EDG</div> 
+    	<div class="menu-sep"></div>
+    	<div>创建管理团队</div> 
+    		</div>  
+    		<span style="margin-left: 40px;">
+    		<a href="#" style="color: white;margin-left: 40px;">项目</a>
+    		<a href="#" style="color: white;margin-left: 40px;">动态</a>
+    		<a href="#" style="color: white;margin-left: 40px;">周报</a>
+    		<a href="#" style="color: white;margin-left: 40px;">团队</a>
+    		<a href="#" style="color: white;margin-left: 40px;">我自己</a>
+    		<a href="#" style="color: white;margin-left: 40px;">知人</a>
+    		<a href="#" style="color: coral;margin-left: 40px;">升级到Pro</a>
+    		
+    		<span style="color: white;margin-left: 40px;">
+    			<button class="icon-tip" style="height: 20px;width: 20px;border: none;"></button>
+    		</span>
+    		<span style="margin-left: 40px;">
+		<button class="icon-search" style="height: 20px;width: 20px;border: none;"></button>
+		<span id = "ss">
+		<input style="background-color: white;" />
+		<button style="font-family: '微软雅黑';"><b>搜索</b></button>
+		</span>
+		</span>
+    	</span>
+			</div>
+		</div>
+		
+	</body>
+</html>

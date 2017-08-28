@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<title>登录页面</title>
+	<head>
+		
+		<meta charset="utf-8" />
+		<title></title>
+	<link rel="stylesheet" href="css/css.css" />
+	<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.4.5/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.4.5/themes/icon.css">
+	<script type="text/javascript" src="js/jquery-easyui-1.4.5/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="js/jquery-easyui-1.4.5/locale/easyui-lang-zh_CN.js"></script>	
+	
+	<script type="text/javascript">
+	  $(document).ready(function(){
+	  	$("input").each(function(){
+        //保存当前文本框的值
+        var vdefault = this.value;
+        //获得焦点时，如果值为默认值，则设置为空
+        $(this).focus(function(){
+			if(this.value == vdefault){
+				this.value = "";
+			}
+		});
+	    //失去焦点时，如果值为空，则设置为默认值
+        $(this).blur(function(){	
+			if (this.value == ""){
+				this.value = vdefault;
+			}
+		});
+    		});
+    		
+		})
+	 
+	</script>
+	
+	</head>
+	<body style="background-color: black;text-align: center;">
+		<div style="text-align: center;color:coral;font-size:80px;font-family: '微软雅黑';margin-top: 50px;">
+			<b>Power</b>
+		</div>
+		<div>
+	<form id="ff" style="text-align: center;">
+    	<table align="center" cellpadding="10" >
+    		<tr>
+    			<td>
+    				<input name="email" class="easyui-textbox" 
+    					data-options="required:true,validType:'email'" 
+    					value="请输入登录邮箱" 
+    					style="height: 30px;width: 300px;color:darkgrey;font-weight: bold;">
+    			</td>
+    		</tr>
+    		
+    		<tr>
+    			<td>
+    				<input name="password" class="easyui-textbox" 
+    					data-options="required:true" 
+    					value="请输入密码"
+    					style="height: 30px;width: 300px;color: darkgrey;font-weight: bold;">
+    			</td>
+    		</tr>
+    		
+    	</table>
+    </form>	
+    </div>
+		
+	<div style="text-align: center;margin-bottom:20px;margin-top: -70px; ">
+     <a href="#" class="button" style="color: black;margin-bottom: 20px;"><b>登录</b></a>
+     </div>
+          <p style="color: grey;text-align: center;margin-top: 20px;"><span>没有power账户？</span><a href="#" style="color: grey;">立即注册→</a></p>
+     <div>
+     <p style="margin-top: 305px;text-align: center;font-family:tahoma;font-size: 15px;">
+			<span style="color: lightskyblue;">C</span>
+			<span style="color: plum;">a</span>
+			<span style="color: lightskyblue;">p</span>
+			<span style="color: plum;">p</span>
+			<span style="color: lightskyblue;">c</span>
+			<span style="color: plum;">c</span>
+			<span style="color: lightskyblue;">i</span>
+			<span style="color: plum;">n</span>
+			<span style="color: lightskyblue;">o</span>
+			<span style="color: orangered;">®</span>
+	
+		</p>
+		</div>
+	</body>
+</html>
